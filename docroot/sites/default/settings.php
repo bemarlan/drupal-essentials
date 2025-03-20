@@ -876,6 +876,9 @@ if (file_exists('/var/www/site-php/eeblanning/eeblanning-settings.inc')) {
   require '/var/www/site-php/eeblanning/eeblanning-settings.inc';
 }
 
+$config_directories = [
+  'config' => 'docroot/sites/default/files/config_fvg5GrRikmF2Yi1ay7F54x2ZllfNPEHU5FxLyXO2iFegpwaKOCLAKw73uAP4Dj1KrTPMXdvDdrC/sync',
+];
 
 require DRUPAL_ROOT . "/../vendor/acquia/drupal-recommended-settings/settings/acquia-recommended.settings.php";
 /**
