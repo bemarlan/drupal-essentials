@@ -872,6 +872,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 
+if (file_exists('/var/www/site-php/eeblanning/eeblanning-settings.inc')) {
+  require '/var/www/site-php/eeblanning/eeblanning-settings.inc';
+}
+
+
 require DRUPAL_ROOT . "/../vendor/acquia/drupal-recommended-settings/settings/acquia-recommended.settings.php";
 /**
  * IMPORTANT.

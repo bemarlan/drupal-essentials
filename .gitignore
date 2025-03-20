@@ -7,9 +7,14 @@
 /vendor/
 /docroot/sites/*/settings.*.php
 /docroot/sites/*/services*.yml
-/docroot/sites/*/files
+/docroot/sites/*/files/*
 /docroot/sites/*/private
 /docroot/sites/simpletest
+
+# Don't ignore our config sync directory.
+!/docroot/sites/default/files/config_fvg5GrRikmF2Yi1ay7F54x2ZllfNPEHU5FxLyXO2iFegpwaKOCLAKw73uAP4Dj1KrTPMXdvDdrC
+!/docroot/sites/default/files/config_fvg5GrRikmF2Yi1ay7F54x2ZllfNPEHU5FxLyXO2iFegpwaKOCLAKw73uAP4Dj1KrTPMXdvDdrC/sync
+!/docroot/sites/default/files/config_fvg5GrRikmF2Yi1ay7F54x2ZllfNPEHU5FxLyXO2iFegpwaKOCLAKw73uAP4Dj1KrTPMXdvDdrC/sync/*
 
 # Directories specific to this template
 /docroot/libraries
