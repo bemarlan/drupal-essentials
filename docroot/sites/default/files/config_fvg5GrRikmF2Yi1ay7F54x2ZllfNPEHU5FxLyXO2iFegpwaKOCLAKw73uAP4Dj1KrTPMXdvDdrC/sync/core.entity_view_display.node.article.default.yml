@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_media
     - field.field.node.article.field_tags
     - image.style.wide
     - node.type.article
@@ -108,6 +109,23 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 4
             additional: {  }
+          2df70376-e602-4c76-98f4-af05124c2128:
+            uuid: 2df70376-e602-4c76-98f4-af05124c2128
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_media'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: br6izr-iGEu--JvNbCJNtOBpRnxpFLXfoV5y61U9Nqc
@@ -142,6 +160,15 @@ content:
         attribute: eager
     third_party_settings: {  }
     weight: -1
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 111
     region: content
   field_tags:
     type: entity_reference_label

@@ -1,0 +1,29 @@
+uuid: ca981dff-ae2a-40c8-b9ab-b985955e1e87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media
+    - media.type.image
+    - node.type.article
+id: node.article.field_media
+field_name: field_media
+entity_type: node
+bundle: article
+label: 'Media Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: field_media_image.title
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
